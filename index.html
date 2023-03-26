@@ -1,758 +1,207 @@
 <html>
     <head>
         <title>CSS Examples</title>
+
+        <script>
+            function examplesList(topic, numberExamples) {
+                var txt = "";
+                txt +=  '<h2>' + topic + '</h2>\n' + 
+                        '<details>\n' + 
+                            '<summary>Examples</summary>\n';
+
+                for (var i = 1; i <= numberExamples; i++) {
+                    txt += '<li type="square"><a href="./' + topic.replace(/\s/g, "") + '/Example_' + i + '.html">Example'+ i + '</a></li>\n';
+                }
+
+                txt += '</details>\n';
+                document.getElementById(topic).innerHTML = txt;
+            }
+        </script>  
     </head>
     <body>  
-        <h1><center>CSS Examples</Center></h1>
+        <h1 style="text-align: center;">CSS Examples</h1>
 
-        <h2>CSS Syntax</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSSyntax/Example_1.html">Example 1</a></li>
-        </details>
+        <p id="CSS Syntax"></p>
+        <script>examplesList('CSS Syntax', 1);</script>
 
-        <h2>CSS Selectors</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSSelectors/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSSelectors/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSSelectors/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSSelectors/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSSelectors/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSSelectors/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSSelectors/Example_7.html">Example 7</a></li>
-        </details>
+        <p id="CSS Selectors"></p>
+        <script>examplesList('CSS Selectors', 7);</script>
 
-        <h2>CSS How To / Where To</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSHowTo-WhereTo/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSHowTo-WhereTo/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSHowTo-WhereTo/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSHowTo-WhereTo/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSHowTo-WhereTo/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="CSS How To - Where To"></p>
+        <script>examplesList('CSS How To - Where To', 5);</script>
 
-        <h2>CSS Comments</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSComments/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSComments/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="CSS Comments"></p>
+        <script>examplesList('CSS Comments', 2);</script>
 
-        <h2>CSS Colors</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSColors/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSColors/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSColors/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSColors/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSColors/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSColors/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSColors/Example_7.html">Example 7</a></li>
-        </details>
+        <p id="CSS Colors"></p>
+        <script>examplesList('CSS Colors', 7);</script>
 
-        <h2>CSS Backgrounds</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSBackgrounds/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_13.html">Example 13</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_14.html">Example 14</a></li>
-            <li type="square"><a href="./CSSBackgrounds/Example_15.html">Example 15</a></li>
-        </details>
+        <p id="CSS Backgrounds"></p>
+        <script>examplesList('CSS Backgrounds', 15);</script>
+    
+        <p id="CSS Borders"></p>
+        <script>examplesList('CSS Borders', 22);</script>
 
-        <h2>CSS Borders</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSBorders/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSBorders/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSBorders/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSBorders/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSBorders/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSBorders/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSBorders/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSBorders/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSBorders/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSBorders/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSBorders/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSBorders/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSBorders/Example_13.html">Example 13</a></li>
-            <li type="square"><a href="./CSSBorders/Example_14.html">Example 14</a></li>
-            <li type="square"><a href="./CSSBorders/Example_15.html">Example 15</a></li>
-            <li type="square"><a href="./CSSBorders/Example_16.html">Example 16</a></li>
-            <li type="square"><a href="./CSSBorders/Example_17.html">Example 17</a></li>
-            <li type="square"><a href="./CSSBorders/Example_18.html">Example 18</a></li>
-            <li type="square"><a href="./CSSBorders/Example_19.html">Example 19</a></li>
-            <li type="square"><a href="./CSSBorders/Example_20.html">Example 20</a></li>
-            <li type="square"><a href="./CSSBorders/Example_21.html">Example 21</a></li>
-            <li type="square"><a href="./CSSBorders/Example_22.html">Example 22</a></li>
-        </details>
+        <p id="CSS Margins"></p>
+        <script>examplesList('CSS Margins', 8);</script>
 
-        <h2>CSS Margins</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSMargins/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSMargins/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSMargins/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSMargins/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSMargins/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSMargins/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSMargins/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSMargins/Example_8.html">Example 8</a></li>
-        </details>
+        <p id="CSS Padding"></p>
+        <script>examplesList('CSS Padding', 11);</script>
 
-        <h2>CSS Padding</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSPadding/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSPadding/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSPadding/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSPadding/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSPadding/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSPadding/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSPadding/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSPadding/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSPadding/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSPadding/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSPadding/Example_11.html">Example 11</a></li>
-        </details>
+        <p id="CSS Height - Width"></p>
+        <script>examplesList('CSS Height - Width', 6);</script>
 
-        <h2>CSS CSS Height/Width</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSHeight-Width/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSHeight-Width/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSHeight-Width/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSHeight-Width/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSHeight-Width/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSHeight-Width/Example_6.html">Example 6</a></li>
-        </details>
+        <p id="CSS Box Model"></p>
+        <script>examplesList('CSS Box Model', 2);</script>
 
-        <h2>CSS CSS Box Model</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSBoxModel/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSBoxModel/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="CSS Outline"></p>
+        <script>examplesList('CSS Outline', 6);</script>
 
-        <h2>CSS Outline</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSOutline/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSOutline/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSOutline/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSOutline/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSOutline/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSOutline/Example_6.html">Example 6</a></li>
-        </details>
+        <p id="CSS Text"></p>
+        <script>examplesList('CSS Text', 13);</script>
 
-        <h2>CSS Text</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSText/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSText/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSText/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSText/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSText/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSText/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSText/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSText/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSText/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSText/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSText/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSText/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSText/Example_13.html">Example 13</a></li>
-        </details>
+        <p id="CSS Fonts"></p>
+        <script>examplesList('CSS Fonts', 9);</script>
 
-        <h2>CSS Fonts</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSFonts/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSFonts/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSFonts/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSFonts/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSFonts/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSFonts/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSFonts/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSFonts/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSFonts/Example_9.html">Example 9</a></li>
-        </details>
+        <p id="CSS Icons"></p>
+        <script>examplesList('CSS Icons', 3);</script>
 
-        <h2>CSS Icons</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSIcons/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSIcons/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSIcons/Example_3.html">Example 3</a></li>
-        </details>
+        <p id="CSS Links"></p>
+        <script>examplesList('CSS Links', 7);</script>
 
-        <h2>CSS Links</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSLinks/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSLinks/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSLinks/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSLinks/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSLinks/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSLinks/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSLinks/Example_7.html">Example 7</a></li>
-        </details>
+        <p id="CSS Lists"></p>
+        <script>examplesList('CSS Lists', 7);</script>
 
-        <h2>CSS Lists</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSLists/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSLists/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSLists/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSLists/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSLists/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSLists/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSLists/Example_7.html">Example 7</a></li>
-        </details>
+        <p id="CSS Tables"></p>
+        <script>examplesList('CSS Tables', 14);</script>
 
-        <h2>CSS Tables</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSTables/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSTables/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSTables/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSTables/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSTables/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSTables/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSTables/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSTables/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSTables/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSTables/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSTables/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSTables/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSTables/Example_13.html">Example 13</a></li>
-            <li type="square"><a href="./CSSTables/Example_14.html">Example 14</a></li>
-        </details>
+        <p id="CSS Display"></p>
+        <script>examplesList('CSS Display', 5);</script>
 
-        <h2>CSS Display</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSDisplay/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSDisplay/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSDisplay/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSDisplay/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSDisplay/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="CSS Positioning"></p>
+        <script>examplesList('CSS Positioning', 15);</script>
 
-        <h2>CSS Positioning</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSPositioning/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_13.html">Example 13</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_14.html">Example 14</a></li>
-            <li type="square"><a href="./CSSPositioning/Example_15.html">Example 15</a></li>
-        </details>
+        <p id="CSS Overflow"></p>
+        <script>examplesList('CSS Overflow', 5);</script>
 
-        <h2>CSS Overflow</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSOverflow/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSOverflow/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSOverflow/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSOverflow/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSOverflow/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="CSS Floating"></p>
+        <script>examplesList('CSS Floating', 11);</script>
 
-        <h2>CSS Floating</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSFloating/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSFloating/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSFloating/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSFloating/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSFloating/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSFloating/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSFloating/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSFloating/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSFloating/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSFloating/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSFloating/Example_11.html">Example 11</a></li>
-        </details>
+        <p id="CSS Inline-block"></p>
+        <script>examplesList('CSS Inline-block', 2);</script>
 
-        <h2>CSS Inline-block</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSInline-block/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSInline-block/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="CSS Aligning Elements"></p>
+        <script>examplesList('CSS Aligning Elements', 11);</script>
 
-        <h2>CSS Aligning Elements</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSAligningElements/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSAligningElements/Example_11.html">Example 11</a></li>
-        </details>
+        <p id="CSS Combinators"></p>
+        <script>examplesList('CSS Combinators', 4);</script>
 
-        <h2>CSS Combinators</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSCombinators/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSCombinators/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSCombinators/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSCombinators/Example_4.html">Example 4</a></li>
-        </details>
+        <p id="CSS Pseudo-classes"></p>
+        <script>examplesList('CSS Pseudo-classes', 7);</script>
 
-        <h2>CSS Pseudo-classes</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSPseudo-classes/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSPseudo-classes/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSPseudo-classes/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSPseudo-classes/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSPseudo-classes/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSPseudo-classes/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSPseudo-classes/Example_7.html">Example 7</a></li>
-        </details>
+        <p id="CSS Pseudo-elements"></p>
+        <script>examplesList('CSS Pseudo-elements', 5);</script>
 
-        <h2>CSS Pseudo-elements</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSPseudo-elements/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSPseudo-elements/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSPseudo-elements/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSPseudo-elements/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSPseudo-elements/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="CSS Opacity"></p>
+        <script>examplesList('CSS Opacity', 6);</script>
 
-        <h2>CSS Opacity</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSOpacity/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSOpacity/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSOpacity/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSOpacity/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSOpacity/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSOpacity/Example_6.html">Example 6</a></li>
-        </details>
+        <p id="CSS Navigation Bars"></p>
+        <script>examplesList('CSS Navigation Bars', 7);</script>
 
-        <h2>CSS Navigation Bars</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSNavigationBars/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSNavigationBars/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSNavigationBars/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSNavigationBars/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSNavigationBars/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSNavigationBars/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSNavigationBars/Example_7.html">Example 7</a></li>
-        </details>
+        <p id="CSS Dropdowns"></p>
+        <script>examplesList('CSS Dropdowns', 5);</script>
 
-        <h2>CSS Dropdowns</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSDropdowns/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSDropdowns/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSDropdowns/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSDropdowns/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSDropdowns/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="CSS Image Gallery"></p>
+        <script>examplesList('CSS Image Gallery', 2);</script>
 
-        <h2>CSS Image Gallery</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSImageGallery/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSImageGallery/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="CSS Image Sprites"></p>
+        <script>examplesList('CSS Image Sprites', 3);</script>
 
-        <h2>CSS Image Sprites</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSImageGallery/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSImageGallery/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSImageGallery/Example_3.html">Example 3</a></li>
-        </details>
+        <p id="CSS Attribute Selectors"></p>
+        <script>examplesList('CSS Attribute Selectors', 7);</script>
 
-        <h2>CSS Attribute Selectors</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_7.html">Example 7</a></li>
-        </details>
+        <p id="CSS Forms"></p>
+        <script>examplesList('CSS Forms', 13);</script>
 
-        <h2>CSS Forms</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSAttributeSelectors/Example_13.html">Example 13</a></li>
-        </details>
+        <p id="CSS Counters"></p>
+        <script>examplesList('CSS Counters', 3);</script>
 
-        <h2>CSS Counters</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSCounters/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSCounters/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSCounters/Example_3.html">Example 3</a></li>
-        </details>
+        <p id="CSS Website Layout"></p>
+        <script>examplesList('CSS Website Layout', 2);</script>
 
-        <h2>CSS Website Layout</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSWebsiteLayout/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSWebsiteLayout/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="CSS Rounded Corners"></p>
+        <script>examplesList('CSS Rounded Corners', 3);</script>
 
-        <h2>CSS Rounded Corners</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSRoundedCorners/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSRoundedCorners/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSRoundedCorners/Example_3.html">Example 3</a></li>
-        </details>
+        <p id="CSS Border Images"></p>
+        <script>examplesList('CSS Border Images', 3);</script>
 
-        <h2>CSS Border Images</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSBorderImages/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSBorderImages/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSBorderImages/Example_3.html">Example 3</a></li>
-        </details>
+        <p id="CSS Gradients"></p>
+        <script>examplesList('CSS Gradients', 13);</script>
 
-        <h2>CSS Gradients</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSGradients/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSGradients/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSGradients/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSGradients/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSGradients/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSGradients/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSGradients/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSGradients/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSGradients/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSGradients/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSGradients/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSGradients/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSGradients/Example_13.html">Example 13</a></li>
-        </details>
-        
-        <h2>CSS Shadow Effects</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSShadowEffects/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSShadowEffects/Example_12.html">Example 12</a></li>
-        </details>
+        <p id="CSS Shadow Effects"></p>
+        <script>examplesList('CSS Shadow Effects', 12);</script>
 
-        <h2>CSS Text Effects</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSTextEffects/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSTextEffects/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSTextEffects/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSTextEffects/Example_4.html">Example 4</a></li>
-        </details>
+        <p id="CSS Text Effects"></p>
+        <script>examplesList('CSS Syntax', 4);</script>
 
-        <h2>CSS Web Fonts</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSWebFonts/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSWebFonts/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="CSS Web Fonts"></p>
+        <script>examplesList('CSS Web Fonts', 2);</script>
 
-        <h2>CSS 2D Transforms</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSS2DTransforms/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSS2DTransforms/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSS2DTransforms/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSS2DTransforms/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSS2DTransforms/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSS2DTransforms/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSS2DTransforms/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSS2DTransforms/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSS2DTransforms/Example_9.html">Example 9</a></li>
-        </details>
+        <p id="CSS 2D Transforms"></p>
+        <script>examplesList('CSS 2D Transforms', 9);</script>
 
-        <h2>CSS 3D Transforms</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSCSS3DTransforms/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSCSS3DTransforms/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSCSS3DTransforms/Example_3.html">Example 3</a></li>
-        </details>
+        <p id="CSS 3D Transforms"></p>
+        <script>examplesList('CSS 3D Transforms', 3);</script>
 
-        <h2>CSS Transitions</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSTransitions/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSTransitions/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSTransitions/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSTransitions/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSTransitions/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSTransitions/Example_6.html">Example 6</a></li>
-        </details>
+        <p id="CSS Transitions"></p>
+        <script>examplesList('CSS Transitions', 6);</script>
 
-        <h2>CSS Animations</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSAnimations/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSAnimations/Example_10.html">Example 10</a></li>
-        </details>
+        <p id="CSS Animations"></p>
+        <script>examplesList('CSS Animations', 10);</script>
 
-        <h2>CSS Tooltips</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSTooltips/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSTooltips/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSTooltips/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSTooltips/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSTooltips/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSTooltips/Example_6.html">Example 6</a></li>
-        </details>
+        <p id="CSS Tooltips"></p>
+        <script>examplesList('CSS Tooltips', 6);</script>
 
-        <h2>CSS Style Images</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSStyleImages/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSStyleImages/Example_13.html">Example 13</a></li>
-        </details>
+        <p id="CSS Style Images"></p>
+        <script>examplesList('CSS Style Images', 13);</script>
+ 
+        <p id="CSS Image Reflection"></p>
+        <script>examplesList('CSS Image Reflection', 4);</script>
 
-        <h2>CSS Image Reflection</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSImageReflection/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSImageReflection/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSImageReflection/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSImageReflection/Example_4.html">Example 4</a></li>
-        </details>
+        <p id="CSS Object-fit"></p>
+        <script>examplesList('CSS Object-fit', 6);</script>
 
-        <h2>CSS Object-fit</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSObject-fit/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSObject-fit/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSObject-fit/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSObject-fit/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSObject-fit/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSObject-fit/Example_6.html">Example 6</a></li>
-        </details>
+        <p id="CSS Object-position"></p>
+        <script>examplesList('CSS Syntax', 2);</script>
 
-        <h2>CSS Object-position</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSObject-position/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSObject-position/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="CSS Buttons"></p>
+        <script>examplesList('CSS Buttons', 14);</script>
 
-        <h2>CSS Buttons</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSButtons/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSButtons/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSButtons/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSButtons/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSButtons/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSButtons/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSButtons/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSButtons/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSButtons/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSButtons/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSButtons/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSButtons/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSButtons/Example_13.html">Example 13</a></li>
-            <li type="square"><a href="./CSSButtons/Example_14.html">Example 14</a></li>
-        </details>
+        <p id="CSS Pagination"></p>
+        <script>examplesList('CSS Pagination', 10);</script>
 
-        <h2>CSS Pagination</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSPagination/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSPagination/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSPagination/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSPagination/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSPagination/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSPagination/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSPagination/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSPagination/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSPagination/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSPagination/Example_10.html">Example 10</a></li>
-        </details>
+        <p id="CSS Multiple Columns"></p>
+        <script>examplesList('CSS Multiple Columns', 8);</script>
 
-        <h2>CSS Multiple Columns</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSMultipleColumns/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSMultipleColumns/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSMultipleColumns/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSMultipleColumns/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSMultipleColumns/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSMultipleColumns/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSMultipleColumns/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSMultipleColumns/Example_8.html">Example 8</a></li>
-        </details>
+        <p id="CSS User Interface"></p>
+        <script>examplesList('CSS User Interface', 4);</script>
 
-        <h2>CSS User Interface</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSUserInterface/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSUserInterface/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSUserInterface/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSUserInterface/Example_4.html">Example 4</a></li>
-        </details>
+        <p id="CSS Variables"></p>
+        <script>examplesList('CSS Variables', 2);</script>
 
-        <h2>CSS Variables</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSVariables/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSVariables/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="CSS Box Sizing"></p>
+        <script>examplesList('CSS Box Sizing', 3);</script>
 
-        <h2>CSS Box Sizing</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSBoxSizing/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSBoxSizing/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSBoxSizing/Example_3.html">Example 3</a></li>
-        </details>
+        <p id="CSS Flexbox"></p>
+        <script>examplesList('CSS Flexbox', 25);</script>
 
-        <h2>CSS Flexbox</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSFlexbox/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_13.html">Example 13</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_14.html">Example 14</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_15.html">Example 15</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_16.html">Example 16</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_17.html">Example 17</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_18.html">Example 18</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_19.html">Example 19</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_20.html">Example 20</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_21.html">Example 21</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_22.html">Example 22</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_23.html">Example 23</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_24.html">Example 24</a></li>
-            <li type="square"><a href="./CSSFlexbox/Example_25.html">Example 25</a></li>
-        </details>
+        <p id="CSS Media Queries"></p>
+        <script>examplesList('CSS Media Queries', 12);</script>
 
-        <h2>CSS Media Queries</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSMediaQueries/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_9.html">Example 9</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./CSSMediaQueries/Example_12.html">Example 12</a></li>
-        </details>
+        <p id="CSS Responsive Webdesign"></p>
+        <script>examplesList('CSS Responsive Webdesign', 7);</script>
 
-        <h2>CSS Responsive Webdesign</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSResponsiveWebdesign/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSResponsiveWebdesign/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSResponsiveWebdesign/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSResponsiveWebdesign/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSResponsiveWebdesign/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSResponsiveWebdesign/Example_6.html">Example 6</a></li>
-            <li type="square"><a href="./CSSResponsiveWebdesign/Example_7.html">Example 7</a></li>
-        </details>
-
-        <h2>CSS Grid</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./CSSGrid/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./CSSGrid/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./CSSGrid/Example_3.html">Example 3</a></li>
-            <li type="square"><a href="./CSSGrid/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./CSSGrid/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./CSSGrid/Example_6.html">Example 6</a></li>
-        </details>
+        <p id="CSS Grid"></p>
+        <script>examplesList('CSS Grid', 6);</script>
     </body>
 </html>
